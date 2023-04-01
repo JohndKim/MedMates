@@ -1,6 +1,10 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React from "react";
+import Navbar from './components/Navbar';
+import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 const Name = () => {
   // thing in here is rendered in the site
@@ -11,11 +15,15 @@ const Name = () => {
 
 function App() {
   return (
-    <div className="App">
-      <Name></Name>
-    </div>
-  )
-
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact />
+        </Switch>
+      </Router>
+    </>
+  );
 }
 
 // function App() {
