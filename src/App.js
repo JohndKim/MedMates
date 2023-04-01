@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 // import './App.css';
+import React from "react";
 
 const Name = () => {
   // thing in here is rendered in the site
